@@ -1,0 +1,4 @@
+# Mantiene los artefactos de Rust fuera de src-tauri/ para que Vite no los vigile
+# (en Windows, vigilar src-tauri/target mientras compila provoca EBUSY y tumba el dev server).
+[build]
+target-dir = "../../.cargo-target"

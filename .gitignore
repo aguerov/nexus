@@ -1,0 +1,53 @@
+# Node / frontend
+node_modules/
+dist/
+*.local
+
+# Rust
+target/
+**/*.rs.bk
+
+# Tauri
+nexus-app/src-tauri/gen/
+
+# Runtime/artefactos offline (binarios grandes, paquetes firmados)
+runtime/*
+!runtime/.gitkeep
+
+# Datos locales / secretos
+*.env
+*.key
+*.pem
+*.signing.key
+data/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Estado de desarrollo y material privado
+.devdata/
+.cargo-target/
+*.tsbuildinfo
+nexus-app/vite.config.js
+nexus-app/vite.config.d.ts
+nexus-app/tmp-*.mjs
+nexus-app/smoke-*.mjs
+.env*
+*.pfx
+*.p12
+*.crt
+*.cer
+*.kdbx
+*.bak
+*.dump
+*.sqlite*
+*.log
+nexus.json
+dendrite.yaml
+homeserver.yaml
